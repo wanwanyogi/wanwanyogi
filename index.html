@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanwanyogi</title>
+    <style>
+        body {
+            margin: 0;
+            background: #fff9f0;
+            font-family: 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #a0662f;
+            margin-top: 1rem;
+        }
+
+        .qrcodes {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .qrcodes img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .qrcodes img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0V7g4JoGEKROOw1D8V4nMG?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <h1>歡迎來到 @wanwanyogi</h1>
+    <div class="qrcodes">
+        <div>
+            <img src="instagram_qr.jpg" alt="Instagram QR Code">
+        </div>
+        <div>
+            <img src="line_qr.jpg" alt="LINE QR Code">
+        </div>
+    </div>
+    <footer>
+        © 2025 Wanwanyogi
+    </footer>
+</body>
+</html>
